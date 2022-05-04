@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../decript/encript.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../decript/encriptFunctions.js" defer></script>
+    
+    <title>Encriptador - Ramiro Pastrano</title>
+
+</head>
+<body>
+    <!--Header-->
+
+    <header>
+        <span class="title1">¿EnCrypt</span>
+        <span class="title2">DeCrypt?</span>
+    </header>
+
+    <!--Header End-->
+    <!--Cuerpo Function-->
+    <div>
+        <form action="">
+            <textarea id="convert" name="convert" rows="10" cols="30" placeholder="Please write a text to convert..." oninput="showDetails()" onkeyup="minusculas(textarea.value)"></textarea>
+            <input type="button" value="Encrypt" class="btn1 bg-blue-900" onclick="encrypt(textarea.value)">
+            <input type="button" value="Decrypt" class="btn2" onclick="decrypt(textarea.value)">
+        </form>
+    </div>
+    <!--Cuerpo Function End-->
+    <!--Resultado-->
+    <div id="resultado" class="result" tabindex="0">
+            <div id="converted" class="message converted">
+            </div>
+            <div id="message" class="message">
+                
+                <img src="../decript/undraw1.svg" alt="waiting" width="160px" height="240px">
+                <span class="m1">No Message Found Yet...</span>
+                <span>Enter text to Encrypt or Decrypt...</span>
+            </div>
+            <a id="copy" class="btn2 copy" onclick="CopyConvert()">Copy</a>
+    </div>
+    <!--Resultado End-->
+</body>
+
+<script>
+
+    
+
+
+    
+
+</script>
+
+</html>
