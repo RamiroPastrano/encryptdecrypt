@@ -1,0 +1,379 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+
+:root{
+    --purple: #8E3BFF;
+    --gray: #F8F8F8;
+    --dark-gray: #8D8D8D;
+    --pink: #F83292;
+    --yellow: #FFFB10;
+    --black-opaque: #4C4C4C;
+    --dark-blue: #233083;
+    --light-blue: #B8C0F1;
+    --gradient: linear-gradient(90deg, var(--purple), var(--gray));
+
+}
+
+    body{
+        background-color: var(--gray);
+    }
+    header{
+        padding: 0.5rem;
+        
+        position: relative;
+        
+    }
+    header span{
+        position: absolute;
+        width: auto;
+        border-radius: 0.5rem;
+        padding: 0.3rem;
+        box-shadow: 0rem 0.5rem 1.5rem var(--dark-gray);
+    }
+
+    
+
+    .title1{
+        background-color: var(--light-blue);
+        color: var(--dark-blue);
+        font-weight: bold;
+        border-radius: 1rem 0rem 0rem 1rem;
+        
+       
+    }
+    .title2{
+        background-color: var(--dark-blue);
+        color: white;
+        font-weight: bold;
+        margin-top: 0rem;
+        margin-left: 5rem;
+        border-radius: 0rem 1rem 1rem 0rem;
+        
+    }
+
+    div{
+        position: relative;
+        
+    }
+
+    div form{
+        position:absolute;
+        margin-left: 5%;
+        margin-top: 5rem;
+        width: 60%;
+        height: 50%;
+    }
+
+    div form textarea{
+        color: var(--dark-blue);
+        border-radius: 0.5rem;
+        background-color: var(--gray);
+        width: 100%;
+    }
+    
+    
+
+    textarea:focus { 
+        outline: none !important;
+        /*border-color: #719ECE;
+        box-shadow: 0 0 10px var(--dark-gray);*/
+    }
+
+    
+
+    .result{
+        background-color: white;
+        position: relative;
+        border-radius: 0.5rem;
+        margin-left: 68%;
+        margin-top: 5rem;
+        width: 18rem;
+        height: 30rem;
+        /*border: 1px solid;*/
+        padding: 10px;
+        box-shadow: 5px 10px 10px var(--dark-gray);
+    }
+
+    .result .message{
+        color: var(--dark-blue);
+        height: 10%;
+        text-align: justify;
+        
+    }
+
+    .result .message img{
+        margin-top: 60%;
+        margin-left: 22%;
+    }
+
+    .result .message .m1{
+        
+        width: 100%;
+        margin-left:2rem;
+        text-align: center;
+        display: flex;
+        font-weight: bold;
+    }
+
+    .result .converted{
+        padding: 1rem;
+        width: 100%;
+        height: 0%;
+        text-overflow: clip;
+        overflow-y: auto;
+    }
+
+    
+
+    .btn1{
+        
+        background-color: var(--dark-blue);
+        color: white;
+        font-weight: bold;
+        border: 1px solid;
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 15rem;
+        cursor: pointer;
+        
+    }
+    .btn2{
+        background-color: var(--light-blue);
+        color: var(--dark-blue);
+        font-weight: bold;
+        border: 1px solid;
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 15rem;
+        cursor: pointer;
+        margin-top: 25%;
+    }
+
+    .copy{
+        visibility: hidden;
+        position: absolute;
+        margin-left: 5%;
+        margin-top: -65%;
+        text-align: center;
+        
+    }
+
+
+    /*Media Querys*/
+
+/*Media Queries */
+
+/* Large Screen*/
+@media(max-width:1200px){
+    html{
+        font-size: 100%;
+        overflow-x: hidden;
+    }
+} 
+
+/* Medium Large Screen*/
+@media(max-width:900px){
+    html{
+        font-size: 85%;
+        overflow-x: hidden;
+    }
+}    
+
+/* Medium Screen*/
+@media(max-width:800px){
+    html{
+        font-size: 100%;
+        overflow-x: hidden;
+    }
+    .result{
+        width: 85%;
+        height: 15rem;
+        margin-top: 55%;
+        margin-left: 5%;
+    }
+
+    div form{
+        position:absolute;
+        margin-left: 5%;
+        margin-top: 5rem;
+        width: 100%;
+        height: 20%;
+    }
+
+    .result .message{
+        align-items: center;
+        margin-top: -10%;
+        margin-left: 11rem;
+        
+    }
+    .result .message .m1{
+        
+        margin-top: -30%;
+        display: flex;
+        font-weight: bold;
+    }
+
+    .result .message img{
+        width: 0px;
+        height: 0px;
+    }
+
+    .result .converted{
+        margin-top: -2%;
+        margin-left: 0%;
+        padding: 1rem;
+        width: 100%;
+        height: 0%;
+        text-overflow: clip;
+        overflow-y: auto;
+    }
+
+    .btn2{
+        
+        margin-top: 0%;
+    }
+    .copy{
+        visibility: hidden;
+        position: absolute;
+        margin-left: 28%;
+        margin-top: -30%;
+        text-align: center;
+        
+    }
+
+    
+}   
+
+/* Small Screen*/
+@media(max-width:560px){
+    html{
+        font-size: 80%;
+        overflow-x: hidden;
+    }
+    .result{
+        width: 85%;
+        height: 15rem;
+        margin-top: 65%;
+        margin-left: 10%;
+    }
+
+    div form{
+        position:absolute;
+        margin-left: 5%;
+        margin-top: 5rem;
+        width: 100%;
+        height: 20%;
+    }
+
+    .result .message{
+        align-items: center;
+        margin-top: -10%;
+        margin-left: 9rem;
+        
+    }
+    .result .message .m1{
+        
+        margin-top: -30%;
+        display: flex;
+        font-weight: bold;
+    }
+
+    .result .message img{
+        width: 0px;
+        height: 0px;
+    }
+
+    .result .converted{
+        margin-top: -2%;
+        margin-left: 0%;
+        padding: 1rem;
+        width: 100%;
+        height: 0%;
+        text-overflow: clip;
+        overflow-y: auto;
+    }
+
+    .btn2{
+        
+        margin-top: 0%;
+    }
+    .copy{
+        visibility: hidden;
+        position: absolute;
+        margin-left: 28%;
+        margin-top: -30%;
+        text-align: center;
+        
+    }
+
+    
+}    
+
+
+/* Small Screen*/
+@media(max-width:480px){
+    html{
+        font-size: 70%;
+        overflow-x: hidden;
+    }
+    .result{
+        width: 85%;
+        height: 15rem;
+        margin-top: 90%;
+        margin-left: 5%;
+    }
+
+    div form{
+        position:absolute;
+        margin-left: 5%;
+        margin-top: 5rem;
+        width: 100%;
+        height: 20%;
+    }
+
+    .result .message{
+        align-items: center;
+        margin-top: -10%;
+        margin-left: 5.5rem;
+        
+    }
+    .result .message .m1{
+        
+        margin-top: -30%;
+        display: flex;
+        font-weight: bold;
+    }
+
+    .result .message img{
+        width: 0px;
+        height: 0px;
+    }
+
+    .result .converted{
+        margin-top: -2%;
+        margin-left: 0%;
+        padding: 1rem;
+        width: 100%;
+        height: 0%;
+        text-overflow: clip;
+        overflow-y: auto;
+    }
+
+    .btn2{
+        
+        margin-top: 0%;
+    }
+    .copy{
+        visibility: hidden;
+        position: absolute;
+        margin-left: 20%;
+        margin-top: -40%;
+        text-align: center;
+        
+    }
+
+    
+}
